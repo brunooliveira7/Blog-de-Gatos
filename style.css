@@ -58,6 +58,7 @@ header form {
   font-size: 1.6rem;
   font-weight: 600;
   background-color: var(--color-gray);
+  color: var(--color-white-base);
 }
 
 .input-wrapper input::placeholder {
@@ -69,3 +70,38 @@ header form {
   height: 4.2rem;
   border-radius: 50%;
 }
+
+.main-cat {
+  height: 219px;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 3.1rem 2.6rem 3.4rem 2.4rem;
+}
+
+.container h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  gap: 1.2rem;
+  margin: 0.8rem 0 3.1rem;
+}
+
+.like,
+.deslike {
+  background-color: var(--color-blue-bold);
+  border-radius: 50%;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main p {
+  font-weight: 400;
+  line-height: 2.5rem;}
