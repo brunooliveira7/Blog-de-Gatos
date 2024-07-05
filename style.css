@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-blue-bold: #065e7c;
+  --color-blue-200: #387e96;
+  --color-white-400: #f4fcff;
+  --color-white-base: #ffffff;
+  --color-text-base: #121214;
+  --color-text-bold: #202024;
+  --color-gray: rgb(255, 255, 255, 0.2);
+}
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--color-white-base);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 43rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1.2rem 2.8rem;
+  height: 7.2rem;
+  width: 43rem;
+  background: var(--color-blue-bold);
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--color-gray);
+}
+
+.input-wrapper input::placeholder {
+  color: var(--color-white-base);
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
