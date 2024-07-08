@@ -41,7 +41,6 @@ header {
   gap: 2.5rem;
   padding: 1.2rem 2.8rem;
   height: 7.2rem;
-  width: 43rem;
   background: var(--color-blue-bold);
 }
 
@@ -71,8 +70,8 @@ header form {
 }
 
 .main-cat {
-  height: 21.9rem;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .container {
