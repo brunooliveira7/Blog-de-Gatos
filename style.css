@@ -31,7 +31,6 @@ body {
 .app {
   display: grid;
   align-items: center;
-  width: 43rem;
   margin: 0 auto;
 }
 
@@ -41,7 +40,6 @@ header {
 }
 
 .header-container {
-  max-width: 37.4rem;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -74,21 +72,18 @@ header form {
 }
 
 main {
-  max-width: 43.4rem;
+  max-width: 43rem;
+  padding-inline: 2rem;
   margin-inline: auto;
 }
 
-.main-cat{
+.main-cat {
   width: 100%;
-  height: auto;
-}
-
-.container {
-  padding: 1.5rem 2.6rem 3.4rem 2.4rem;
 }
 
 .container h1 {
   font-size: 2.4rem;
+  width: 38rem;
 }
 
 section {
@@ -122,10 +117,15 @@ main p {
   font-weight: 400;
   line-height: 2.5rem;
   color: #121214;
+  width: 38rem;
 }
 
 .articles {
   padding: 0rem 2.4rem 3.9rem 2.2rem;
+  max-width: 43rem;
+  padding-inline: 2rem;
+  margin-inline: auto;
+  margin-top: 2rem;
 }
 
 .articles h1 {
@@ -166,11 +166,64 @@ footer {
   align-items: center;
   padding: 1.6rem;
   background: var(--color-blue-200);
-  width: 43rem;
+
   height: 6.4rem;
 }
 
 footer p {
   color: var(--color-white-base);
   font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .app {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+    gap: 4rem 3.2rem;
+  }
+
+  img {
+    border-radius: 0.5rem;
+  }
+
+  container,
+  aside {
+    max-width: initial;
+    margin: initial;
+    padding: initial;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  header .header-container {
+    max-width: 121rem;
+    margin-inline: auto;
+  }
+
+  header form {
+    flex: 1;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  main .container {
+    max-width: 80rem;
+    margin-left: auto;
+  }
+
+  aside {
+    grid-area: aside;
+    margin-top: -42rem;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
