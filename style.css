@@ -227,3 +227,33 @@ footer p {
     grid-area: footer;
   }
 }
+
+img:hover {
+  scale: 1.02;
+}
+
+img {
+  transition: all 300ms;
+}
+
+header {
+  animation: fromTop 600ms 100ms backwards;
+}
+
+main, aside {
+  animation: fromBottom 800ms 100ms backwards;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
